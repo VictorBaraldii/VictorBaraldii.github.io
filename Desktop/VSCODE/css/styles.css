@@ -1,5 +1,4 @@
 /* Reset */
-
 * {
     padding: 0;
     margin: 0;
@@ -8,11 +7,10 @@
 }
 
 /* Variables */
-
 :root {
     --main-color: #548689;
     --main-text-color: #FFF;
-    --booder-color: #999;
+    --border-color: #999;
     --bio-bg-color: #1E2A3A;
     --bio-border-color: #293544;
     --about-bg-color: #111821;
@@ -30,23 +28,15 @@
     color: var(--main-text-color);
 }
 
+/* Bio Container */
 #bio-container {
     flex: 1 1 20%;
     min-height: 100vh;
     background-color: var(--bio-bg-color);
     text-align: center;
     padding: 30px 12px;
-    border_righ: 5px solid var(--bio-border-color);
+    border-right: 5px solid var(--bio-border-color);
 }
-
-#about-container {
-    flex: 1 1 80%;
-    min-height: 100vh;
-    background-color: var(--about-bg-color);
-    padding: 50px;
-}
-
-/* Bio Container */
 
 #bio-container h2 {
     margin-bottom: 25px;
@@ -71,7 +61,7 @@
     display: flex;
     justify-content: center;
     list-style: none;
-    border-bottom: 1px solid var(--booder-color);
+    border-bottom: 1px solid var(--border-color);
     margin-bottom: 25px;
     padding-bottom: 25px;
 }
@@ -89,27 +79,22 @@
 #email-container {
     display: flex;
     justify-content: center;
-}
-
-#email-container ion-icon,
-#email-container a {
-    flex: 1 1 0;
-}
-
-#email-container a {
-    color: var(--main-text-color);
-    text-decoration: none;
-    max-width: 225px;
+    align-items: center;
 }
 
 #email-container ion-icon {
     color: var(--main-color);
     font-size: 20px;
     margin-right: 5px;
-    max-width: 20px;
 }
- 
+
 /* About Container */
+#about-container {
+    flex: 1 1 80%;
+    min-height: 100vh;
+    background-color: var(--about-bg-color);
+    padding: 50px;
+}
 
 #name {
     font-size: 42px;
@@ -141,24 +126,22 @@
     width: 150px;
     text-align: center;
     display: flex;
-}
-
-#btn-project ion-icon,
-#btn_projects span {
-    flex: 1 1 0;
+    justify-content: center;
+    align-items: center;
 }
 
 #btn-project ion-icon {
     font-size: 20px;
-    max-width: 20p;
+    margin-right: 5px;
 }
 
 #btn-project:hover {
     background-color: transparent;
 }
 
+/* Skills */
 #skills-section-title {
-    border-top: 1px solid var(--booder-color);
+    border-top: 1px solid var(--border-color);
     padding: 20px;
     margin-bottom: 20px;
     font-size: 32px;
@@ -171,9 +154,10 @@
 }
 
 .skills-box {
-    flex: 1 1 33%;
-    max-width: 33%;
-    margin-bottom: 35px;
+    flex: 1 1 100%;
+    max-width: 100%;
+    margin-bottom: 40px;
+    text-align: left;
 }
 
 .skills-title {
@@ -185,21 +169,6 @@
 }
 
 .skills-box i {
-    font-size: 45px;
-    margin-right: 10px;
-}
-
-#btn-project {
-    margin: 20px auto;
-}
-
-.skills-box {
-    flex: 1 1 100%;
-    max-width: 100%;
-    margin-bottom: 40px;
-    text-align: left;
-}
-
-.skills-box i {
     font-size: 60px;
+    margin-right: 10px;
 }
